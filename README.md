@@ -1,5 +1,5 @@
 # Frontend-Fundamentals-Pirple.com
-This project fills our body with HTML & CSS and that leads to cloning online websites without coping their code.
+This project fills our body with HTML & CSS and that leads to cloning online websites without copying their code.
 
 This certification is really valuable if you choose your career to be in web development.
 

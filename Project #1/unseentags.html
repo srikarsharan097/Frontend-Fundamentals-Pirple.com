@@ -1,0 +1,46 @@
+
+
+
+<!-- This is prototype-->
+<!DOCTYPE html> 
+<html>
+	<!-- This section includes all the headings, meta, stylesheets linking etc-->
+	<head>
+		<!-- This sestion is used for displaying title at the top of browsers tabs-->
+		<title>Project</title>
+	</head>
+	
+	<!--The whole content you see on webbrowser is because of body tag-->
+	<body>
+		<h1>5 tags?</h1>
+		
+		<!--Form is a tag where you can submit details etc-->
+		<form action="/action_page.php">
+			<!--Lable is a tag which specifies the name of the controls-->
+			<label for="fname">Name:</label><br>
+			<!--input is a tag which helps displaying controls on web page-->
+			<input type="text" id="fname" value="Srikar"><br><br>
+			<!--This is used for various event handling purposes-->
+			<button type="submit" value="Submit">Submit</button>
+		</form>
+		<br/><br/>
+		<!--audio is a tag which allows you to diplay music control on page-->
+		<audio controls>
+			<!--Source is a tag which helps to take media file using src attribute-->
+		  <source src="song.mp3"/>
+		</audio>
+		<br/><br/>
+		<!--This tag can be used to embed another webpage on current page-->
+		<iframe src="www.pirple.com" title="Our Site">
+		</iframe>
+		<br/><br/>
+		<label for="color">Choose a color:</label>
+		<br/>
+		<!--This acts as a dropdownlist-->
+		<select name="color" id="color">
+			<!--This adds values to the dropdownlist-->
+			<option value="Red">Red</option>
+			<option value="Blue">Blue</option>
+		</select>
+	</body>
+</html>

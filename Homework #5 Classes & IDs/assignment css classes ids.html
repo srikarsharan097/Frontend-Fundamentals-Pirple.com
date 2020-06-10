@@ -1,0 +1,98 @@
+<!-- This is prototype-->
+<!DOCTYPE html> 
+<html>
+	<!-- This section includes all the headings, meta, stylesheets linking etc-->
+	<head>
+		<!-- This sestion is used for displaying title at the top of browsers tabs-->
+		<title>Applying CSS</title>
+		<style>
+			p>.span_p
+			{
+				font-style:italic;
+			}
+			p>.span_p_last
+			{
+				text-decoration:underline;
+			}
+			p>.span_p_red
+			{
+				font-style:normal;
+				color:red;
+			}
+			.h1_class{
+				padding-bottom: 20px;
+				color: #666;
+			}
+			.h3_class{
+				padding-bottom: 10px;
+				color: #690;
+			}
+			p,#a_id
+			{
+			  font-size: 25px;
+			}
+			li
+			{
+				font-size: 24px;
+			}
+			.ul_class
+			{
+				padding-bottom: 10px;
+			}
+			.ol_class
+			{
+				padding-bottom: 11px;
+			}
+			#body_id
+			{
+				background-color: orange;
+				opacity: 2.0;
+			}
+			#a_id:link, #a_id:visited 
+			{
+				background-color: #f44336;
+				color: white;
+				padding: 10px 20px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+			}
+
+			#a_id:hover, #a_id:active 
+			{
+				background-color: red;
+			}
+			.marquee_class
+			{
+				background-color: #1f292f;
+				color:white;
+			}
+		</style>
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<!--The whole content you see on webbrowser is because of body tag-->
+	<body id="body_id">
+		<h1 class="h1_class"><u>How to make potato fry?</u></h1>
+		<marquee class="marquee_class">Buy potatoes online for low cost. (Advertisement)</marquee>
+		<h3 class="h3_class"><p>Making <span class="span_p_red">potato fry</span> delicious is not so easy 
+		and not so difficult either. All we need to know is 
+		step by step <span class="span_p">procedure</span>. Below are the <span class="span_p_last">ingredients</span> needed</p></h3>
+		<ul class="ul_class">
+			<li class='fas fa-seedling'> Potatoes</li><br>
+			<li class='fas fa-seedling'> Onions</li><br>
+			<li class='fas fa-seedling'> Oil, Salt, Pepper</li><br>
+			<li class='fas fa-seedling'> Masala</li><br>
+		</ul>
+		
+		<ol type="I" class="ol_class">
+			<li>Cut Potatoes into pieces</li>
+			<li>Cut Onions</li>
+			<li>Add oil into pan.</li>
+			<li>Add potato slices and the add Salt,Pepper,Masala</li>
+		</ol>
+		<a id="a_id" href="https://www.youtube.com/watch?v=GD7oFY7-LG0">Click here</a> to see full video.
+		
+	</body>
+</html>

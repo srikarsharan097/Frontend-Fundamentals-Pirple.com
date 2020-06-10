@@ -1,0 +1,223 @@
+<!-- This is prototype-->
+<!DOCTYPE html> 
+<html>
+	<!-- This section includes all the headings, meta, stylesheets linking etc-->
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<!-- This sestion is used for displaying title at the top of browsers tabs-->
+    <title>Potato Fry</title>
+
+    <style>
+			#a_id:link, #a_id:visited 
+			{
+				background-color: #f44336;
+				color: white;
+				padding: 10px 20px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+			}
+
+			#a_id:hover, #a_id:active 
+			{
+				background-color: red;
+			}
+			.marquee_class
+			{
+				background-color: #1f292f;
+				color:white;
+			}
+				
+		  #document {
+			background-color: orange;
+		  }
+
+		  .text-content {
+			font-size: 32px;
+		  }
+
+		  .title {
+			padding-bottom: 30px;
+		  }
+
+		  #big-title {
+			font-weight: bold;
+			text-decoration: underline;
+			font-size: 50px;
+		  }
+
+		  .center {
+			text-align: center;
+		  }
+
+		  .recipe-photo {
+			width: 90%;
+			max-width: 300px;
+			margin: 0 auto;
+			display: block;
+			border-radius: 30px;
+			border: 5px solid white;
+		  }
+
+		  .ingredients {
+			list-style: none;
+		  }
+
+		  .ingredients li:before {
+			content: "✏️";
+			padding-right: 10px;
+		  }
+
+		  .steps {
+			list-style-type: upper-roman;
+		  }
+
+		  p > span {
+			font-style: italic;
+		  }
+
+		  p > span:last-child {
+			text-decoration: underline;
+		  }
+
+		  .span-no-styles {
+			font-style: normal;
+			text-decoration: none;
+		  }
+
+		  .list-groups {
+			width: 90%;
+			margin: 0 auto;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+		  }
+
+		  .list-groups section {
+			margin: 20px;
+			border-radius: 20px;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+			padding: 20px 5px;
+			color: white;
+			font-family: Helvetica, Arial, sans-serif;
+		  }
+
+		  #list-ingredients {
+			width: 350px;
+			background-color: #1B4F72;
+		  }
+
+		  #list-steps {
+			width: 350px;
+			background-color: #353131;
+		  }
+
+		  @media only screen and (max-width: 400px) {
+			.list-groups {
+			  width: 100%;
+			}
+
+			.list-groups section {
+			  color: black;
+			  border-radius: 0;
+			  margin: 0;
+			  box-shadow: none;
+			}
+
+			#list-steps, #list-ingredients {
+			  background-color: white;
+			}
+
+			.recipe-photo {
+			  border-radius: 0;
+			  max-width: 100%;
+			  width: 100%;
+			  border: 0;
+			}
+
+			.another-recipes {
+			  display: none;
+			}
+		  }
+
+		  @media only screen and (min-width: 401px) and (max-width: 750px) {
+			#document {
+			  background-color: white;
+			  margin: 0 20px;
+			}
+		  }
+
+		  @media only screen and (min-width: 750px) {
+			#document {
+			  margin: 0 200px;
+			}
+		  }
+    </style>
+  </head>
+	<!--The whole content you see on webbrowser is because of body tag-->
+  <body id="document">
+    <!-- Name of the dish -->
+    <h1 class="title" id="big-title">How to make potato fry?</h1>
+	<marquee class="marquee_class">Buy potatoes online for low cost. (Advertisement)</marquee>
+
+    <!-- Description of the dish -->
+    <p class="text-content">
+      Making<span class="span-no-styles">a</span>, <span>potato fry</span> delicious is not so easy 
+		and not so difficult either. All we need to know is 
+		step by step <span>procedure</span> . Below are the <span>ingredients</span> needed.
+    </p>
+
+    <div class="list-groups">
+      <section id="list-ingredients">
+        <h2 class="title center">Ingredients needed</h2>
+
+        <!-- List of ingredients -->
+        <ul class="ingredients">
+          <li>Potatoes</li>
+          <li>Onions</li>
+          <li>Oil, Salt, Pepper</li>
+          <li>Masala</li>
+        </ul>
+      </section>
+
+      <section id="list-steps">
+        <h2 class="title center">Procedure</h2>
+
+        <!-- Steps of the recipe -->
+        <ol class="steps">
+			<li>Cut Potatoes into pieces 🥞</li>
+			<li>Cut Onions 🥚</li>
+			<li>Add oil into pan. 🥛</li>
+			<li>Add potato slices and the add Salt,Pepper,Masala</li>
+        </ol>
+      </section>
+    </div>
+
+    <!-- Describe what the dish should look, smell and taste like -->
+    <p class="text-content">
+      This is very tasty, you can serve this with your family without any tension.
+    </p>
+	<a id="a_id" href="https://www.youtube.com/watch?v=GD7oFY7-LG0">Click here</a> to see full video.
+		
+
+    <!-- An image of the dish -->
+    <p>
+      <img src="aloo.jpg" alt="Aloo fry"
+      class="recipe-photo" />
+    </p>
+
+    <section class="another-recipes">
+      <h2 class="title">Also See :</h2>
+
+      <ul>
+        <li><a href="">Chiken fry</a></li>
+        <li><a href="">Egg fry</a></li>
+        <li><a href="">Mutton fry</a></li>
+        <li><a href="">Fish Fry</a></li>
+        <li><a href="">Prawns Fry</a></li>
+      </ul>
+    </section>
+
+  </body>
+</html>
